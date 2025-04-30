@@ -17,7 +17,7 @@ export default function Impressum() {
 
         <strong className='pt-6 pb-3'>Kontakt</strong>
         <p>
-        E-Mail: bewegt.sein@posteo.de<br />
+        E-Mail: zirkuslust@posteo.de<br />
         Letzengasse 5<br />
         96052 Bamberg<br />
         </p>
