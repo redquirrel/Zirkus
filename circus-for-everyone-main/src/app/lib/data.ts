@@ -19,3 +19,7 @@ export const aktuellws = [
         image: "/workshop_kufa-12.jpg",
     },
   ] as const;
+
+// type definitions
+export type AktuellwsItem = typeof aktuellws[number];
+export type AktuellwsArray = typeof aktuellws;
