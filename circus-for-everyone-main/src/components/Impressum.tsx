@@ -17,7 +17,7 @@ export default function Impressum() {
 
         <strong className='pt-6 pb-3'>Kontakt</strong>
         <p>
-        E-Mail: zirkuslust@posteo.de<br />
+        E-Mail: bewegtsein@posteo.de<br />
         Letzengasse 5<br />
         96052 Bamberg<br />
         </p>
@@ -38,7 +38,7 @@ export default function Impressum() {
         <p>Sofie Lorenz<br />
         Letzengasse 5<br />
         96052 Bamberg<br />
-        E-Mail: zirkuslust@posteo.de<br />
+        E-Mail: bewegtsein@posteo.de<br />
         </p>
 
         <strong className='pt-6 pb-3'>Art der verarbeiteten Daten:</strong>
