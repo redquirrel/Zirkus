@@ -2,9 +2,16 @@
 
 import React from 'react';
 import { motion } from "framer-motion";
+import { aktuellws } from '@/app/lib/data';
+import { AktuellwsArray } from '@/app/lib/data';
+
+// type definition for prop
+type AktuellProps = {
+    aktuellws: AktuellwsArray;
+};
 
 
-export default function Aktuell() {
+export default function Aktuell({ aktuellws }: AktuellProps) {
   return (
     <div id="aktuell" className='flex justify-center items-center pt-16 ld:pt-20 pb-10 md:pb-20'>
       <div className='text-center md:border md:border-gold md:rounded-3xl max-w-5xl w-full p-6'>
@@ -29,7 +36,13 @@ export default function Aktuell() {
             Informationen zu fortlaufendenden Kursen oder Workshops:
         </h1>
         <p className='mb-3 text-lg lg:text-xl pt-2'>
-            hallo jetzt gibt es einen workshop!
+            {/* Iterate through the array and display only the 'none' property */}
+            {aktuellws.map((item, index) => (
+                <div key={index}>
+                    {/* Check if 'none' exists for the current item and display it */}
+                    {item.none && <p>{item.none}</p>}
+                </div>
+            ))}
         </p>
 
 
