@@ -35,7 +35,7 @@ export default function Aktuell({ aktuellws }: AktuellProps) {
         <h1 className="text-center mb-3 xl:text-3xl lg:text-3xl md:text-2xl text-xl font-semibold">
             Informationen zu fortlaufendenden Kursen oder Workshops:
         </h1>
-        <p className='mb-3 text-lg lg:text-xl pt-2'>
+        <div className='mb-3 text-lg lg:text-xl pt-2'>
             {/* Iterate through the array and display only the 'none' property */}
             {aktuellws.map((item, index) => (
                 <div key={index}>
@@ -43,7 +43,7 @@ export default function Aktuell({ aktuellws }: AktuellProps) {
                     {item.none && <p>{item.none}</p>}
                 </div>
             ))}
-        </p>
+        </div>
 
 
         <h1 className="text-center mb-3 xl:text-3xl lg:text-3xl md:text-2xl text-xl font-semibold pt-16">
